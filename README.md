@@ -1,3 +1,3 @@
-# TV
+# TV Raycast Extension
 
-Servicios de TV streaming
+Raycast extension to list and access my streaming TV services.
