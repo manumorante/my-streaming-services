@@ -1,0 +1,58 @@
+[
+  {
+    "id": 0,
+    "name": "Just Watch",
+    "icon": "justwatch.ico",
+    "url": "https://www.justwatch.com",
+    "featured": []
+  },
+  {
+    "id": 1,
+    "name": "Netflix",
+    "icon": "netflix.ico",
+    "url": "https://www.netflix.com",
+    "featured": ["Stranger Things", "The Crown", "La Casa de Papel"]
+  },
+  {
+    "id": 2,
+    "name": "Disney+",
+    "icon": "disneyplus.ico",
+    "url": "https://www.disneyplus.com/es-es/home",
+    "featured": ["The Mandalorian", "The Simpsons", "Star Wars"]
+  },
+  {
+    "id": 3,
+    "name": "HBO",
+    "icon": "hbo.ico",
+    "url": "https://play.hbomax.com/page/urn:hbo:page:home",
+    "featured": ["The Last Of Us", "Game of Thrones", "Westworld"]
+  },
+  {
+    "id": 4,
+    "name": "Prime Video",
+    "icon": "primevideo.ico",
+    "url": "https://www.primevideo.com/",
+    "featured": ["The Boys", "The Expanse", "Sussesion"]
+  },
+  {
+    "id": 5,
+    "name": "Apple TV+",
+    "icon": "appletv.ico",
+    "url": "https://tv.apple.com/es",
+    "featured": ["The Morning Show", "See", "Dickinson"]
+  },
+  {
+    "id": 6,
+    "name": "SkyShowtime",
+    "icon": "skyshowtime.ico",
+    "url": "https://www.skyshowtime.com",
+    "featured": ["The Offer", "Halo", "Tulsa King"]
+  },
+  {
+    "id": 7,
+    "name": "Filmin",
+    "icon": "filmin.webp",
+    "url": "https://www.filmin.es",
+    "featured": ["Back to the Future", "The Office", "The Walking Dead"]
+  }
+]

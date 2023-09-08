@@ -1,22 +1,28 @@
-import { SERVICES } from '../data'
-import { ActionPanel, Action, List } from '@raycast/api'
+import SERVICES from "./services.json";
+import { ActionPanel, Action, List } from "@raycast/api";
 
 export default function Command() {
   return (
     <List>
-      {SERVICES.map((item) => (
-        <List.Item
-          key={item.id}
-          icon={item.icon}
-          title={item.title}
-          subtitle={item.subtitle}
-          actions={
-            <ActionPanel>
-              <Action.OpenInBrowser url={item.url} />
-            </ActionPanel>
-          }
-        />
-      ))}
+      {SERVICES.map(({ id, icon, name, featured, url }) => {
+        return (
+          <List.Item
+            key={id}
+            icon={icon}
+            title={name}
+            accessories={featured
+              .filter((movie) => movie !== "")
+              .map((movie) => ({
+                tag: { value: `${movie}` },
+              }))}
+            actions={
+              <ActionPanel>
+                <Action.OpenInBrowser url={url} />
+              </ActionPanel>
+            }
+          />
+        );
+      })}
     </List>
-  )
+  );
 }

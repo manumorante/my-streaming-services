@@ -1,8 +1,8 @@
 {
   "$schema": "https://www.raycast.com/schemas/extension.json",
-  "name": "tv",
-  "title": "TV",
-  "description": "Servicios de TV streaming",
+  "name": "my-tv",
+  "title": "My TV",
+  "description": "Manage your TV streaming services",
   "icon": "netflix.ico",
   "author": "manumorante",
   "categories": [
@@ -12,20 +12,19 @@
   "commands": [
     {
       "name": "index",
-      "title": "My TV",
-      "subtitle": "Streaming",
-      "description": "Mis servicios de TV en streaming",
+      "title": "Search for TV services",
+      "description": "Search for my TV services",
       "mode": "view"
     }
   ],
   "dependencies": {
-    "@raycast/api": "^1.38.0"
+    "@raycast/api": "1.50.0"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.0.0",
-    "@typescript-eslint/parser": "^5.0.0",
+    "@raycast/eslint-config": "1.0.5",
+    "@types/node": "18.8.3",
+    "@types/react": "18.0.9",
     "eslint": "^7.32.0",
-    "eslint-config-prettier": "^8.3.0",
     "prettier": "^2.5.1",
     "typescript": "^4.4.3"
   },
@@ -34,6 +33,6 @@
     "dev": "ray develop",
     "fix-lint": "ray lint --fix",
     "lint": "ray lint",
-    "publish": "ray publish"
+    "publish": "npx @raycast/api@latest publish"
   }
 }
