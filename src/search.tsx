@@ -2,14 +2,14 @@ import { useEffect, useState } from "react";
 import { openGoogleChrome } from "./openGoogleChrome";
 import SERVICES from "./services.json";
 import { ActionPanel, Action, List, getPreferenceValues, Icon } from "@raycast/api";
+import { useLocalStorage, getFavicon } from "@raycast/utils";
 import MyServices from "./my-services";
-import { useLocalStorage } from "@raycast/utils";
 import type { Service } from "./types";
 
 export default function Command() {
   const [services, setServices] = useState<Service[]>([]);
   const [searchText, setSearchText] = useState("");
-  const { value: localServices, isLoading } = useLocalStorage("services", SERVICES);
+  const { value: localServices, isLoading } = useLocalStorage<Service[]>("services", SERVICES);
   const preferences = getPreferenceValues();
 
   useEffect(() => {
@@ -42,7 +42,7 @@ export default function Command() {
       searchBarPlaceholder="Search for movies, series"
       onSearchTextChange={setSearchText}
     >
-      {services?.map(({ icon, name, url, search }) => {
+      {services?.map(({ name, url, search }) => {
         const searchURL = () => {
           if (search && searchText) return search?.replace("{query}", searchText);
           return url;
@@ -51,7 +51,7 @@ export default function Command() {
         return (
           <List.Item
             key={url}
-            icon={icon}
+            icon={getFavicon(url)}
             title={name}
             subtitle={search && `${searchText}`}
             actions={
@@ -59,12 +59,12 @@ export default function Command() {
                 <ActionPanel.Section>
                   {preferences.UseGoogleChrome == "yes" ? (
                     <Action
-                      icon={icon}
+                      icon={getFavicon(url)}
                       title={`${name}`}
                       onAction={() => openGoogleChrome({ directory: preferences.directory, url: searchURL() })}
                     />
                   ) : (
-                    <Action.OpenInBrowser icon={icon} title={`${name}`} url={searchURL()} />
+                    <Action.OpenInBrowser icon={getFavicon(url)} title={`${name}`} url={searchURL()} />
                   )}
                 </ActionPanel.Section>
                 <Action.Push icon={Icon.BulletPoints} title="Manage Services" target={<MyServices />} />
