@@ -9,7 +9,7 @@
 
 type ExtensionPreferences = {
   /** Use Google Chrome - Use Google Chrome */
-  "UseGoogleChrome": "yes" | "no",
+  "UseGoogleChrome": "no" | "yes",
   /** Google Chrome Profile - Google Chrome Profile */
   "GoogleProfile": string
 }
@@ -18,13 +18,13 @@ type ExtensionPreferences = {
 declare type Preferences = ExtensionPreferences
 
 declare namespace Preferences {
-  /** Preferences accessible in the `search-services` command */
-  export type SearchServices = ExtensionPreferences & {}
+  /** Preferences accessible in the `search` command */
+  export type Search = ExtensionPreferences & {}
 }
 
 declare namespace Arguments {
-  /** Arguments passed to the `search-services` command */
-  export type SearchServices = {}
+  /** Arguments passed to the `search` command */
+  export type Search = {}
 }
 
 

@@ -22,7 +22,6 @@ export default function MyServices() {
           actions={
             <ActionPanel>
               <Action title={service.active ? "Inactive" : "Active"} onAction={() => toggleService(service.id)} />
-              <Action title="Delete" style={Action.Style.Destructive} onAction={() => toggleService(service.id)} />
             </ActionPanel>
           }
         />

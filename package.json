@@ -1,9 +1,9 @@
 {
   "$schema": "https://www.raycast.com/schemas/extension.json",
-  "name": "my-tv",
-  "title": "My TV",
-  "description": "Manage your TV streaming services",
-  "icon": "netflix.ico",
+  "name": "my-streaming-services",
+  "title": "My Streaming Services",
+  "description": "Access or search with your streaming services",
+  "icon": "extension_icon.png",
   "author": "manumorante",
   "categories": [
     "Media"
@@ -11,9 +11,9 @@
   "license": "MIT",
   "commands": [
     {
-      "name": "search-services",
-      "title": "Search for TV services",
-      "description": "Search for my TV services",
+      "name": "search",
+      "title": "Search for Movies, Series, ...",
+      "description": "Access or search with your streaming services",
       "mode": "view"
     }
   ],
@@ -24,15 +24,15 @@
       "type": "dropdown",
       "required": false,
       "title": "Use Google Chrome",
-      "default": "Yes",
+      "default": "no",
       "data": [
-        {
-          "title": "Yes",
-          "value": "yes"
-        },
         {
           "title": "No",
           "value": "no"
+        },
+        {
+          "title": "Yes",
+          "value": "yes"
         }
       ]
     },

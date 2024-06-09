@@ -21,10 +21,10 @@ export default function Command() {
 
   if (!isLoading && services.length == 0) {
     return (
-      <List>
-        <List.Item
-          icon={Icon.BulletPoints}
-          title="Manage Services"
+      <List searchBarPlaceholder="Manage services">
+        <List.EmptyView
+          icon={Icon.Play}
+          title="You have not activated any service yet"
           actions={
             <ActionPanel>
               <Action.Push icon={Icon.BulletPoints} title="Manage Services" target={<MyServices />} />
@@ -39,7 +39,7 @@ export default function Command() {
     <List
       isLoading={isLoading || services.length <= 0}
       filtering={false}
-      searchBarPlaceholder="Search for movies"
+      searchBarPlaceholder="Search for movies, series"
       onSearchTextChange={setSearchText}
     >
       {services?.map(({ icon, name, url, search }) => {

@@ -13,14 +13,14 @@
     "icon": "netflix.ico",
     "url": "https://www.netflix.com",
     "search": "https://www.netflix.com/search?q={query}",
-    "active": true
+    "active": false
   },
   {
     "id": "disneyplus",
     "name": "Disney+",
     "icon": "disneyplus.ico",
     "url": "https://www.disneyplus.com/es-es/home",
-    "active": true
+    "active": false
   },
   {
     "id": "crunchyroll",
@@ -28,7 +28,7 @@
     "icon": "crunchyroll.ico",
     "url": "https://www.crunchyroll.com/es/",
     "search": "https://www.crunchyroll.com/es/search?q={query}",
-    "active": true
+    "active": false
   },
   {
     "id": "max",
@@ -36,7 +36,7 @@
     "icon": "hbo.ico",
     "url": "https://play.hbomax.com/page/urn:hbo:page:home",
     "search": "https://play.max.com/search/result?q={query}",
-    "active": true
+    "active": false
   },
   {
     "id": "primevideo",
@@ -44,7 +44,7 @@
     "icon": "primevideo.ico",
     "url": "https://www.primevideo.com/",
     "search": "https://www.primevideo.com/search/?phrase={query}",
-    "active": true
+    "active": false
   },
   {
     "id": "appletvplus",
@@ -52,20 +52,20 @@
     "icon": "appletv.ico",
     "url": "https://tv.apple.com/es",
     "search": "https://tv.apple.com/search?term={query}",
-    "active": true
+    "active": false
   },
   {
     "id": "skyshowtime",
     "name": "SkyShowtime",
     "icon": "skyshowtime.ico",
     "url": "https://www.skyshowtime.com",
-    "active": true
+    "active": false
   },
   {
     "id": "filmin",
     "name": "Filmin",
     "icon": "filmin.webp",
     "url": "https://www.filmin.es",
-    "active": true
+    "active": false
   }
 ]
