@@ -1,58 +1,53 @@
 [
   {
-    "id": 0,
     "name": "Just Watch",
     "icon": "justwatch.ico",
     "url": "https://www.justwatch.com",
-    "featured": []
+    "search": "https://www.justwatch.com/es/buscar?q={query}"
   },
   {
-    "id": 1,
     "name": "Netflix",
     "icon": "netflix.ico",
     "url": "https://www.netflix.com",
-    "featured": ["Stranger Things", "The Crown", "La Casa de Papel"]
+    "search": "https://www.netflix.com/search?q={query}"
   },
   {
-    "id": 2,
     "name": "Disney+",
     "icon": "disneyplus.ico",
-    "url": "https://www.disneyplus.com/es-es/home",
-    "featured": ["The Mandalorian", "The Simpsons", "Star Wars"]
+    "url": "https://www.disneyplus.com/es-es/home"
   },
   {
-    "id": 3,
-    "name": "HBO",
+    "name": "Crunchyroll",
+    "icon": "crunchyroll.ico",
+    "url": "https://www.crunchyroll.com/es/",
+    "search": "https://www.crunchyroll.com/es/search?q={query}"
+  },
+  {
+    "name": "max",
     "icon": "hbo.ico",
     "url": "https://play.hbomax.com/page/urn:hbo:page:home",
-    "featured": ["The Last Of Us", "Game of Thrones", "Westworld"]
+    "search": "https://play.max.com/search/result?q={query}"
   },
   {
-    "id": 4,
     "name": "Prime Video",
     "icon": "primevideo.ico",
     "url": "https://www.primevideo.com/",
-    "featured": ["The Boys", "The Expanse", "Sussesion"]
+    "search": "https://www.primevideo.com/search/?phrase={query}"
   },
   {
-    "id": 5,
     "name": "Apple TV+",
     "icon": "appletv.ico",
     "url": "https://tv.apple.com/es",
-    "featured": ["The Morning Show", "See", "Dickinson"]
+    "search": "https://tv.apple.com/search?term={query}"
   },
   {
-    "id": 6,
     "name": "SkyShowtime",
     "icon": "skyshowtime.ico",
-    "url": "https://www.skyshowtime.com",
-    "featured": ["The Offer", "Halo", "Tulsa King"]
+    "url": "https://www.skyshowtime.com"
   },
   {
-    "id": 7,
     "name": "Filmin",
     "icon": "filmin.webp",
-    "url": "https://www.filmin.es",
-    "featured": ["Back to the Future", "The Office", "The Walking Dead"]
+    "url": "https://www.filmin.es"
   }
 ]
